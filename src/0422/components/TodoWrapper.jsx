@@ -20,10 +20,14 @@ function TodoWrapper(){
     return (
         <div className="wrapper">
            <h1>待辦事項</h1>
-           <CreateForm/>
+           <CreateForm addTodo={addTodo}/>
            {
              todos.map((todo) => {
-                return <Todo todo={todo} key={todo.id}/>
+                return <Todo todo={todo} 
+                key={todo.id}
+                delTodo={delTodo}
+
+                />
              })
            
            }
