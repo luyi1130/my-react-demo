@@ -40,3 +40,21 @@
 .read-the-docs {
   color: #888;
 }
+
+/* .cssAnim1 {
+  border: solid red;
+  width: 200px;
+  height: 200px;
+  display: block;
+  overflow: hidden; /* 超出紅框範圍隱藏 */
+/* }
+
+.cssAnimi1 img{
+  width: 100%;
+  transition: all .3s linear;
+} */
+
+/* .imgScale img{
+  transform:scale(1.5) ;
+} */ 
+

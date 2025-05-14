@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事件處理</title>
+</head>
+
+<body>
+    <!-- JavaScript綁定事件方法一:html行內綁定 -->
+    <input type="button" id="btn1" value="送出1" onclick="send1()">
+    <script>
+        function send1(e){
+            console.log('html行內綁定');
+            console.log(e);       
+        }
+    </script>
+    
+    <!-- JavaScript綁定事件方法二:JavaScript敘述綁定 -->
+     <input type="button" id="btn2" value="送出2">
+     <script>
+        btn2.onclick=function(e){
+            console.log("JavaScript敘述綁定");
+            console.log(e)
+        }
+     </script>
+
+     <!-- JavaScript綁定事件方法三:事件監聽函式 -->
+    <input type="button" id="btn3" value="送出3">
+    <script>
+    // let btn3= document.getElementById("btn3");
+    let btn3=document.querySelector("#btn3")
+    function send3(){
+        console.log("事件監聽函式2");
+    }
+    btn3.addEventListener("click",send3);
+
+    btn3.addEventListener("click",()=>{
+        console.log("事件監聽函式1");
+        console.log(e);
+    })
+    </script>
+
+</body>
+</html>
