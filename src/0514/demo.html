@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旋轉木馬</title>
+    <style>
+        #wrapper{
+            width: 960px;
+            margin: 0 auto;
+        }
+        #carousel{
+            background-color: #ccc;
+        }
+
+        #carousel img{
+            width: 150px;
+            height: 120px;
+            margin: 5px;
+            /* 垂直對其靠上(靠下)是為了要取消 */
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>旋轉木馬</h1><hr>
+
+    </div>
+
+    <!-- jQuery -->
+     <script src="../jQuery/js/jquery-1.11.3.min.js"></script>
+
+    <!-- 選轉木馬主程式 -->
+     <script src="../jQuery/js/jquery.jcarousellite.min.js"></script>
+
+     <!-- 自訂的CSS -->
+    <script>
+        $(function(){
+            $('#carousel').jCarouselLite({
+                // 多久時間輪播
+                auto:1200,
+                // 每次輪播的張數
+                scroll:2,
+                // 可見張數
+                visible:2,
+                // 輪播速度
+                speed:1000,
+            });
+        });
+    </script>
+</body>
+</html>
